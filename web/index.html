@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="CarApp" ng-controller="CarController as ctrl">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="assets/nerd.ico">
+        <title>{{ctrl.title}}</title>
+        <link rel="stylesheet" href="vendor/bootstrap.css">
+        <script src="vendor/angular.js"></script>
+        <script src="vendor/angular-locale_da-dk.js"></script>
+        <script type="text/javascript" src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+        <script src="assets/app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>{{ctrl.title}}</h1>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="#/all">All Cars</a></li>
+                            <li><a href="#/add" ng-click="ctrl.clearNewCar()">Add Car</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <!--This is were templates will be inserted-->
+                <div ng-view="ng-view"></div>
+            </div>
+        </div>
+    </body>
+</html>

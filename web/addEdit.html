@@ -1,0 +1,31 @@
+<div class="col-md-3" style="border: thin lightblue solid; border-radius: 5px;padding: 1em;">
+    <form role="form">
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="number" class="form-control" id="year" ng-model="ctrl.newcar.year" required>
+        </div>
+        <div class="form-group">
+            <label for="registered">Registered</label>
+            <input type="date" class="form-control" id="registered" ng-model="ctrl.newcar.registered" required>
+        </div>
+        <div class="form-group">
+            <label for="make">Make</label>
+            <input type="text" class="form-control" id="make" ng-model="ctrl.newcar.make" required>
+        </div>
+        <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" class="form-control" id="model" ng-model="ctrl.newcar.model" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" ng-model="ctrl.newcar.description" required>
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" class="form-control" id="price" ng-model="ctrl.newcar.price" required>
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="ctrl.addEditCar(ctrl.newcar)">Save</button>
+    </form>
+    <br>
+    <a href="#/all">Go back</a>
+</div>
